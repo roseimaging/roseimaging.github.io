@@ -1,0 +1,330 @@
+body, html {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Dax-Bold", Gravity;
+  background-color: #272a32;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navTop {
+    margin-left: 10px;
+    padding: 0;
+    z-index: 1;
+    color: #fff;
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav h1 {
+  text-align: center;
+  margin: 5px;
+  color: #818181;
+  font-family: satisfy;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.headshot img {
+  border-radius: 250px;
+  border: 1px solid white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+}
+
+.main {
+  margin-left: 250px;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1 {
+  font-family: "Dax-Bold", Gravity, dax;
+  font-size: 7vw;
+  line-height: 11.5vw;
+  text-align: center;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+figcaption a {
+  text-decoration: none;
+  color: white;
+}
+
+.container p {
+  margin: 0px 100px 40px 100px;
+  font-family: "Dax-Bold";
+  font-size: 2vw;
+  line-height: 4vw;
+  text-align: center;
+  color: #fff;
+}
+
+#infoBtn {
+  color: white;
+  text-align: center;
+  margin-top: -20px;
+  text-decoration: underline;
+  transform: scale(1.0);
+  transition: .3s ease;
+
+}
+
+#infoBtn h2 {
+  transform: scale(1.0);
+  transition: .3s ease;
+}
+
+#infoBtn:hover {
+  cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s ease;
+
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #272a32;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  color: black;
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+/*  padding: 0 4px;*/
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 30%;
+  max-width: 33.33%;
+  padding: 0 4px;
+}
+
+
+.hover-img {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  margin: 4px;
+  min-width: 240px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.hover-img * {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.hover-img::before,
+.hover-img::after {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+  transform: scaleY(2);
+}
+
+.hover-img img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.hover-img figcaption {
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  transition-delay: 0.1s;
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hover-img:hover::before,
+.hover-img:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.hover-img:hover > img {
+  opacity: 0.9;
+}
+
+.hover-img:hover figcaption {
+  opacity: 1;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(0, 0, 0, 0.5); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 45%;
+    max-width: 50%;
+  }
+
+  .container p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+      flex: 100%;
+    max-width: 99%;
+    width: 75%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,264 @@
+body, html {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Dax-Bold", Gravity;
+  background-color: #272a32;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navTop {
+    margin-left: 10px;
+    padding: 0;
+    z-index: 1;
+    color: white;
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav h1 {
+  text-align: center;
+  margin: 5px;
+  color: #818181;
+  font-family: satisfy;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.headshot img {
+  border-radius: 250px;
+  border: 1px solid white;
+}
+
+
+.fa {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+}
+
+.main {
+  margin-left: 250px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  color: white;
+  padding: 0em 4em;
+  margin-top: -70px;
+  height: 38em;
+}
+
+.column h2 {
+  padding-top: 3em;
+}
+
+figcaption a {
+  text-decoration: none;
+  color: white;
+}
+
+.container p {
+  margin: 0px 100px 40px 100px;
+  font-family: "Dax-Bold";
+  font-size: 2vw;
+  line-height: 4vw;
+  text-align: center;
+  color: #fff;
+}
+
+#infoBtn {
+  color: white;
+  text-decoration: underline;
+
+}
+
+#infoBtn:hover {
+  cursor: pointer;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #272a32;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  color: black;
+  text-align: center;
+  color: white;
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom: solid 1px #818181;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: transparent;
+  color: white;
+}
+
+input[type=email] {
+   width: 100%;
+  padding: 12px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom: solid 1px #818181;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: transparent;
+  color: white;
+}
+
+input[type=submit] {
+  background-color: #e99944;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 12px 18px;
+  margin: 8px 0px;
+  font-size: 18px;
+    font-family: "Dax-Bold", Gravity;
+}
+
+input[type=submit]:hover {
+  color: black;
+  cursor: pointer;
+}
+
+
+span {
+  color: white;
+  font-family: "Dax-Bold", Gravity;
+}
+
+span a {
+  text-decoration: none;
+  color: #818181;
+}
+
+span a:hover {
+  color: #e99944;
+}
+
+
+.column p {
+  padding-top: 6px;
+  padding-bottom: 16px;
+  color: #818181;
+}
+
+
+@media screen and (max-height: 500px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 100%;
+    height: 40em;
+  }
+
+  span {
+    font-size: 23px;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+    span {
+    font-size: 18px;
+  }
+
+}

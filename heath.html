@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio | John Heath</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="portfolio-style.css">
+</head>
+
+<body>
+<div id="mySidenav" class="sidenav">
+	<h1>Rose Imaging</h1>
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="index.html">Home</a>
+	  <a href="portfolio.html">Portfolio</a>
+	  <a href="about.html">About</a>
+	  <a href="contact.html">Contact</a>
+	  <a class="headshot" href="#"><img src="img/headshot.jpeg" width="175px" height="auto"></a>
+		<a href="https://www.linkedin.com/in/maggie-leazer-0429a915b/" target="_blank" class="fa fa-linkedin"></a>
+		<a href="https://www.instagram.com/rose.imaging/" target="_blank" class="fa fa-instagram"></a>
+</div>
+
+<div class="navTop">
+	<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776</span>
+</div>
+
+<div id="main">
+
+	<div class="return">
+		<h2><a href="portfolio.html">See My Entire Portfolio</a></h2>
+	</div>
+
+	<div class="title">
+		<h3>Cincinnati - John Heath</h3>
+	</div>
+	
+	<div class="row">
+		<div class="column">
+			 <img src="img/heath1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			  <img src="img/heath10.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			  <img src="img/heath11.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			  <img src="img/heath12.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			<img src="img/heath9.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+		</div>
+		<div class="column">
+			 <img src="img/heath6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+		</div>
+		<div class="column">
+			  <img src="img/heath8.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+		</div>
+		<div class="column">
+			  <img src="img/heath4.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			  <img src="img/heath5.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			  <img src="img/heath3.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			  <img src="img/heath7.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+		</div>
+
+		<div class="column">
+			  <img src="img/heath2.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+		</div>
+
+	</div>
+
+			<!-- The Modal/Lightbox -->
+			<div id="myModal" class="modal">
+			  <span class="close cursor" onclick="closeModal()">&times;</span>
+			 <div class="modal-content">
+
+			    <div class="mySlides">
+			      <div class="numbertext">1 / 12</div>
+			      <img src="img/heath1.jpg" style="height:30em">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">2 / 12</div>
+			      <img src="img/heath10.jpg" style="height:30em">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">3 / 12</div>
+			      <img src="img/heath11.jpg" style="height:30em">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">4 / 12</div>
+			      <img src="img/heath12.jpg" style="height:30em">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">5 / 12</div>
+			      <img src="img/heath9.jpg" style="height:30em">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">6 / 12</div>
+			      <img src="img/heath6.jpg" style="height:30em">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">7 / 12</div>
+			      <img src="img/heath8.jpg" style="height:30em">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">8 / 12</div>
+			      <img src="img/heath4.jpg" style="height:30em">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">9 / 12</div>
+			      <img src="img/heath5.jpg" style="height:30em">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">10 / 12</div>
+			      <img src="img/heath3.jpg" style="height:30em">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">11 / 12</div>
+			      <img src="img/heath7.jpg" style="height:30em">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">12 / 12</div>
+			      <img src="img/heath2.jpg" style="height:30em">
+			    </div>
+
+
+			    <!-- Next/previous controls -->
+			    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			  </div>
+			</div>
+</div>
+
+
+
+
+<script type="text/javascript" src="portfolio-script.js"></script>
+</body>
+</html>
